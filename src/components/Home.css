@@ -1,0 +1,27 @@
+.home {
+	background-image: url("../images/space1.jpg");
+	background-color: var(--clr-dark);
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.intro-header {
+	margin: 0;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 4rem;
+	line-height: 59px;
+	z-index: 1;
+}
+
+.intro-header__bold {
+	font-weight: 600;
+	color: var(--clr-red);
+}
