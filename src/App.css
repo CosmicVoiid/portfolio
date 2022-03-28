@@ -3,9 +3,23 @@
 :root {
 	--clr-dark: #2f2f2f;
 	--clr-red: #ea0f68;
+	--clr-green: #04c2c9;
 }
 
 * {
 	margin: 0;
 	padding: 0;
+	scrollbar-color: grey var(--clr-dark);
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--clr-dark);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: grey;
+}
+
+body {
+	overflow-x: hidden;
 }

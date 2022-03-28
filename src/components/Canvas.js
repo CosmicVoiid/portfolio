@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./Canvas.css";
-import starImageUrl from "../images/space1.jpg";
 
 function Canvas() {
 	const canvasRef = useRef(null);
@@ -19,6 +18,7 @@ function Canvas() {
 		const cometArray = [];
 		const NUMBER_OF_STARS = 1;
 		const NUMBER_OF_COMETS = 1;
+		const initialStars = 3;
 
 		class Star {
 			constructor(radius, inset, n, x, y) {
@@ -29,6 +29,7 @@ function Canvas() {
 				this.n = n;
 				this.x = x;
 				this.y = y;
+				this.maxRadius = getRandomIntInclusive(5, 8);
 			}
 			draw() {
 				ctx.beginPath();
@@ -58,7 +59,7 @@ function Canvas() {
 					this.radius = 2;
 					this.start = false;
 					this.flow = 0.3;
-				} else if (this.radius > 7) {
+				} else if (this.radius > this.maxRadius) {
 					this.flow = -0.3;
 				}
 
@@ -152,27 +153,33 @@ function Canvas() {
 			requestAnimationFrame(animate);
 		}
 
-		setInterval(() => {
+		// function initIntervals() = {
+
+		// }
+
+		let interval1 = setInterval(() => {
 			initStars();
 		}, 2000);
 
-		setInterval(() => {
+		let interval2 = setInterval(() => {
 			initStars();
 		}, 3400);
 
-		setInterval(() => {
+		let interval3 = setInterval(() => {
 			initStars();
 		}, 5400);
 
-		setInterval(() => {
+		let interval4 = setInterval(() => {
 			initComet();
 		}, 7000);
 
-		setInterval(() => {
+		let interval5 = setInterval(() => {
 			initComet();
 		}, 15000);
 
-		initStars();
+		for (let i = 0; i < initialStars; i++) {
+			initStars();
+		}
 		initComet();
 		animate();
 
@@ -183,6 +190,37 @@ function Canvas() {
 				setHeight(window.innerHeight);
 			}
 		}
+
+		document.addEventListener("visibilitychange", (event) => {
+			if (document.visibilityState === "visible") {
+				interval1 = setInterval(() => {
+					initStars();
+				}, 2000);
+
+				interval2 = setInterval(() => {
+					initStars();
+				}, 3400);
+
+				interval3 = setInterval(() => {
+					initStars();
+				}, 5400);
+
+				interval4 = setInterval(() => {
+					initComet();
+				}, 7000);
+
+				interval5 = setInterval(() => {
+					initComet();
+				}, 15000);
+			} else {
+				clearInterval(interval1);
+				clearInterval(interval2);
+				clearInterval(interval3);
+				clearInterval(interval4);
+				clearInterval(interval5);
+				ctx.clearRect(0, 0, width, height);
+			}
+		});
 
 		window.addEventListener("resize", () => {
 			resizeCanvasToDisplaySize();

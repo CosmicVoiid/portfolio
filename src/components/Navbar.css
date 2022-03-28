@@ -1,0 +1,24 @@
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	background-color: var(--clr-dark);
+	position: sticky;
+	left: 0;
+	top: 0;
+}
+
+.navbar-list {
+	list-style: none;
+	display: flex;
+}
+
+.navbar-list__item {
+	padding: 1rem;
+	font-size: 1.2rem;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+}
+
+.navbar-list:last-child {
+	margin-right: 8rem;
+}
