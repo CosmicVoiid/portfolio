@@ -1,0 +1,113 @@
+.projects-page {
+	width: 100%;
+}
+
+.wave-container2 {
+	position: absolute;
+	top: 240%;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.wave-container2 svg {
+	position: relative;
+	display: block;
+	width: calc(128% + 1.3px);
+	height: 185px;
+}
+
+.wave-container2 .shape-fill {
+	fill: #2f2f2f;
+}
+
+.spacer {
+	aspect-ratio: 675/900;
+	width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.layer1 {
+	background-image: url("../images/circle-scatter-haikei(2).svg");
+}
+
+.projects-header {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1rem;
+	font-weight: 600;
+	font-size: 2.5rem;
+}
+
+.projects-header-border-bottom {
+	background-color: var(--clr-red);
+	width: 9rem;
+	height: 0.5rem;
+	margin-top: 0.3rem;
+	border-radius: 10px;
+	margin-right: 1rem;
+}
+
+.projects-container {
+	margin-top: 7rem;
+}
+
+.project {
+	width: 80%;
+	display: flex;
+	margin-left: 10rem;
+}
+
+.project-video {
+	width: 100%;
+	border: 5rem solid var(--clr-green);
+	border-left: 0;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.project2-image {
+	width: 100%;
+	border: 5rem solid var(--clr-green);
+	border-right: 0;
+	border-radius: 10px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.project-header {
+	font-size: 2.3rem;
+}
+
+.project-description-header {
+	font-size: 1.8rem;
+}
+
+.project-description {
+	font-size: 1.2rem;
+}
+
+.project-info-container {
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1rem;
+	margin-left: 1rem;
+}
+
+.project-info-container > * {
+	margin-bottom: 0.5rem;
+}
+
+.project2 {
+	margin-top: 5rem;
+}

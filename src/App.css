@@ -10,6 +10,7 @@
 	margin: 0;
 	padding: 0;
 	scrollbar-color: grey var(--clr-dark);
+	font-family: Montserrat, "sans-seriff";
 }
 
 *::-webkit-scrollbar-track {

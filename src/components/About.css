@@ -1,11 +1,11 @@
-.about {
-	width: 100vw;
-	height: 100vh;
+.about-page {
+	width: 100%;
+	min-height: 150vh;
 }
 
 .wave-container {
 	position: absolute;
-	bottom: -100vh;
+	top: 225%;
 	left: 0;
 	width: 100%;
 	overflow: hidden;
@@ -44,9 +44,95 @@
 }
 
 .about-content {
-	margin: 0 auto;
-	max-width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.about-content > p {
+	max-width: 40%;
 	padding: 1rem;
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+
+.tech-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 2.5rem;
+	padding: 1rem;
+	margin-top: 3rem;
+}
+
+.tech-header-border-bottom {
+	background-color: var(--clr-red);
+	width: 17rem;
+	height: 0.5rem;
+	margin-top: 0.3rem;
+	border-radius: 10px;
+	margin-right: 1rem;
+}
+
+.tool-container {
+	display: flex;
+	height: 25rem;
+	justify-content: center;
+	margin-top: 1.5rem;
+}
+
+.tool {
+	background-color: var(--clr-dark);
+	height: 100%;
+	min-width: 15%;
+	box-sizing: border-box;
+	padding: 1rem;
+	margin: 0 2rem;
+	border-radius: 7px;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tool-header {
+	color: var(--clr-green);
+	margin-bottom: 1rem;
+}
+
+.row {
+	display: flex;
+}
+
+.icon-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	transition: all 200ms;
+	box-sizing: border-box;
+}
+
+.icon-container:hover {
+	transform: scale(1.2);
+}
+
+.icon-container > img {
+	width: 42px;
+	height: 42px;
+}
+
+.icon-caption {
+	color: white;
+	margin-top: 8px;
+	font-size: 0.8rem;
+}
+
+.js-image {
+	width: 40px !important;
+	height: 40px !important;
 }

@@ -1,0 +1,26 @@
+.contact-container {
+	width: 100vw;
+	height: 100vh;
+	background-color: #252934;
+}
+
+.contact-divider {
+	position: absolute;
+	top: 421%;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.contact-divider svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 250px;
+	fill: #ffffff;
+}
+
+.contact-divider .envelope {
+	fill: #ffffff;
+}
