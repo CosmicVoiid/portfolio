@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.08fb955c.css",
-    "main.js": "/static/js/main.14f7592a.js",
+    "main.js": "/static/js/main.4405821a.js",
     "static/media/watch-tower.png": "/static/media/watch-tower.b63b6f538fedbec413bb.png",
     "static/media/agora-screenshot.png": "/static/media/agora-screenshot.e808468bf45dae7fd2b3.png",
     "static/media/agora-long3.mp4": "/static/media/agora-long3.e2aa346b636592244aff.mp4",
@@ -20,10 +20,10 @@
     "static/media/react.png": "/static/media/react.cb15bfce2a9004ce61c5.png",
     "index.html": "/index.html",
     "main.08fb955c.css.map": "/static/css/main.08fb955c.css.map",
-    "main.14f7592a.js.map": "/static/js/main.14f7592a.js.map"
+    "main.4405821a.js.map": "/static/js/main.4405821a.js.map"
   },
   "entrypoints": [
     "static/css/main.08fb955c.css",
-    "static/js/main.14f7592a.js"
+    "static/js/main.4405821a.js"
   ]
 }
