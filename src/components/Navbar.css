@@ -21,6 +21,31 @@
 	font-family: "Montserrat", sans-serif;
 }
 
+.navbar-list__item:hover {
+	cursor: pointer;
+}
+
 .navbar-list:last-child {
 	margin-right: 8rem;
+}
+
+.nav-anchor {
+	text-decoration: none;
+	color: white;
+}
+
+.selected {
+	color: var(--clr-red);
+}
+
+@media only screen and (max-width: 1250px) {
+	.navbar-list:last-child {
+		margin-right: 3rem;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.navbar-list__item {
+		font-size: 1rem;
+	}
 }

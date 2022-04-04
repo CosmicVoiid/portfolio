@@ -6,10 +6,7 @@ import watchTowerImg from "../images/watch-tower.png";
 
 function Projects() {
 	return (
-		<div className="projects-page">
-			<h1 className="projects-header">
-				Projects<span className="projects-header-border-bottom"></span>
-			</h1>
+		<div id="projects" className="projects-page">
 			<div className="wave-container2">
 				<svg
 					data-name="Layer 1"
@@ -23,6 +20,10 @@ function Projects() {
 					></path>
 				</svg>
 			</div>
+			<h1 className="projects-header">
+				Projects
+				{/* <span className="projects-header-border-bottom"></span> */}
+			</h1>
 			<div className="projects-container">
 				<div className="project">
 					<video
@@ -48,17 +49,57 @@ function Projects() {
 						<p className="project-description-desktop">
 							Hover over the image for a quick demo!
 						</p>
+						<div className="buttons-container">
+							<button
+								className="button-github"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open("https://github.com/CosmicVoiid/agora");
+								}}
+							>
+								Learn More
+							</button>
+							<button
+								className="button-live"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open("https://agora-atlas.herokuapp.com");
+								}}
+							>
+								Live App
+							</button>
+						</div>
 					</div>
 				</div>
 
 				<div className="project project2">
-					<div className="project-info-container project2-info-container">
+					<div className="project-info-container project2-info-container project2-info-desktop">
 						<h2 className="project-header">The Watch Tower</h2>
 						<h2 className="project-description-header">E-commerce website</h2>
 						<p className="project-description">
 							A fully responsive luxury watch e-commerce website complete with a
 							functioning shopping cart.
 						</p>
+						<div className="buttons-container">
+							<button
+								className="button-github"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open("https://github.com/CosmicVoiid/shopping-cart");
+								}}
+							>
+								Learn More
+							</button>
+							<button
+								className="button-live"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open("https://cosmicvoiid.github.io/shopping-cart");
+								}}
+							>
+								Live App
+							</button>
+						</div>
 					</div>
 
 					<img
@@ -66,6 +107,35 @@ function Projects() {
 						src={watchTowerImg}
 						alt="Watch Tower website"
 					/>
+
+					<div className="project-info-container project2-info-container project2-info-mobile">
+						<h2 className="project-header">The Watch Tower</h2>
+						<h2 className="project-description-header">E-commerce website</h2>
+						<p className="project-description">
+							A fully responsive luxury watch e-commerce website complete with a
+							functioning shopping cart.
+						</p>
+						<div className="buttons-container">
+							<button
+								className="button-github"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open("https://github.com/CosmicVoiid/shopping-cart");
+								}}
+							>
+								Learn More
+							</button>
+							<button
+								className="button-live"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open("https://cosmicvoiid.github.io/shopping-cart");
+								}}
+							>
+								Live App
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 			{/* <div className="spacer layer1"></div> */}

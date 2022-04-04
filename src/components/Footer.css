@@ -1,0 +1,109 @@
+.footer {
+	background-color: var(--clr-dark);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 7rem;
+}
+
+.social-icons {
+	margin-top: 2rem;
+}
+
+/* .social-icons {
+	transform: all 300ms ease;
+}
+
+.social-icons:hover {
+	cursor: pointer;
+	size: 2rem;
+} */
+
+.arrow-up-container {
+	background-color: var(--clr-red);
+	width: 3rem;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: absolute;
+	transform: translateY(-95%);
+}
+
+.arrow-up-container:hover {
+	cursor: pointer;
+}
+
+#lightGroup {
+	fill: var(--clr-green);
+}
+
+#darkGroup {
+	fill: #0081c9;
+}
+
+#dark1,
+#light1,
+#dark2 {
+	transition: all 500ms ease;
+}
+
+#light1 {
+	transform: translateY(5%);
+}
+
+#dark2 {
+	transform: translateY(100%);
+}
+
+svg:hover #light1 {
+	transform: translateY(-20%);
+}
+
+svg:hover #dark1 {
+	transform: translateY(-40%);
+	opacity: 0;
+}
+
+svg:hover #dark2 {
+	transform: translateY(0%);
+}
+
+#email-circle {
+	fill: white;
+}
+
+#email-part1,
+#email-part2 {
+	fill: var(--clr-dark);
+}
+
+#social-icons__github,
+#social-icons__email {
+	transition: all 300ms ease;
+	margin: 0 0.8rem;
+}
+
+#social-icons__github:hover,
+#social-icons__email:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+	fill: var(--clr-green);
+}
+
+#social-icons__email:hover #email-circle {
+	fill: var(--clr-green);
+}
+
+.social-icons > svg {
+	margin: 0 0.8rem;
+}
+
+.trademark {
+	color: white;
+	font-size: 0.8rem;
+	margin-top: 0.5rem;
+}

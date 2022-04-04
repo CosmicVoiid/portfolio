@@ -1,13 +1,13 @@
 .contact-container {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
 	background-color: #252934;
+	padding-bottom: 8rem;
 }
 
 .contact-divider {
-	position: absolute;
-	top: 421%;
-	left: 0;
+	/* position: absolute;
+	top: 429%;
+	left: 0; */
 	width: 100%;
 	overflow: hidden;
 	line-height: 0;
@@ -17,10 +17,90 @@
 	position: relative;
 	display: block;
 	width: calc(100% + 1.3px);
-	height: 250px;
+	height: 200px;
 	fill: #ffffff;
 }
 
 .contact-divider .envelope {
 	fill: #ffffff;
+}
+
+.contact-form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 6rem;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.contact-header {
+	font-size: 2.5rem;
+	color: white;
+	padding-bottom: 15px;
+	border-bottom: 5px solid var(--clr-red);
+}
+
+.contact-description {
+	margin-top: 2rem;
+	width: auto;
+	color: var(--clr-green);
+}
+
+.contact-description2 {
+	margin-top: 0rem;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3rem;
+	width: 55%;
+}
+
+.form-container > * {
+	margin-top: 0.4rem;
+	background-color: var(--clr-dark);
+	border: none;
+	color: white;
+	padding: 0.5rem 1rem;
+	width: 100%;
+	font-size: 1rem;
+	box-sizing: border-box;
+}
+
+.form-container > *:focus {
+	outline: 1px solid var(--clr-green);
+}
+
+.btn-container {
+	display: flex;
+	justify-content: flex-end;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.form-submit {
+	width: 25%;
+	background-color: var(--clr-dark);
+	border: none;
+	color: white;
+	padding: 0.5rem 1rem;
+	margin: 0.3rem 0;
+	font-size: 1rem;
+	transition: all 300ms ease;
+}
+
+.form-submit:hover {
+	cursor: pointer;
+	background-color: var(--clr-green);
+}
+
+@media only screen and (max-width: 1200px) {
+	.contact-divider svg {
+		height: 100px;
+	}
 }

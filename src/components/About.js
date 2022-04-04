@@ -21,10 +21,10 @@ import webpackImg from "../images/webpack.png";
 
 function About() {
 	return (
-		<div className="about-page">
-			{/* <Navbar /> */}
+		<div id="about" className="about-page">
 			<h1 className="about-header">
-				About<span className="header-border-bottom"></span>
+				About
+				{/* <span className="header-border-bottom"/> */}
 			</h1>
 
 			<div className="about-content">
@@ -43,7 +43,7 @@ function About() {
 
 			<h1 className="tech-header">
 				Tools and Skills
-				<span className="tech-header-border-bottom"></span>
+				{/* <span className="tech-header-border-bottom"></span> */}
 			</h1>
 			<div className="tool-container">
 				<div className="tool tool-set1">

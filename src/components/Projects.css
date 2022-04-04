@@ -1,11 +1,11 @@
 .projects-page {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .wave-container2 {
-	position: absolute;
-	top: 240%;
-	left: 0;
 	width: 100%;
 	overflow: hidden;
 	line-height: 0;
@@ -16,14 +16,14 @@
 	position: relative;
 	display: block;
 	width: calc(128% + 1.3px);
-	height: 185px;
+	height: 120px;
 }
 
 .wave-container2 .shape-fill {
 	fill: #2f2f2f;
 }
 
-.spacer {
+/* .spacer {
 	aspect-ratio: 675/900;
 	width: 100%;
 	height: auto;
@@ -34,7 +34,7 @@
 
 .layer1 {
 	background-image: url("../images/circle-scatter-haikei(2).svg");
-}
+} */
 
 .projects-header {
 	display: flex;
@@ -44,6 +44,8 @@
 	margin-top: 1rem;
 	font-weight: 600;
 	font-size: 2.5rem;
+	padding: 0.7rem;
+	border-bottom: 5px solid var(--clr-red);
 }
 
 .projects-header-border-bottom {
@@ -60,14 +62,14 @@
 }
 
 .project {
-	width: 80%;
+	width: 90%;
 	display: flex;
 	margin-left: 10rem;
 }
 
 .project-video {
 	width: 100%;
-	border: 5rem solid var(--clr-green);
+	border: 3rem solid var(--clr-green);
 	border-left: 0;
 	border-radius: 10px;
 	border-top-left-radius: 0;
@@ -76,7 +78,7 @@
 
 .project2-image {
 	width: 100%;
-	border: 5rem solid var(--clr-green);
+	border: 3rem solid var(--clr-green);
 	border-right: 0;
 	border-radius: 10px;
 	border-top-right-radius: 0;
@@ -110,4 +112,71 @@
 
 .project2 {
 	margin-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.buttons-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.3rem;
+}
+
+.button-github,
+.button-live {
+	padding: 0.3rem 1rem;
+	font-size: 1rem;
+	margin: 0 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border: 3px solid var(--clr-red);
+	color: var(--clr-red);
+	transition: all 300ms ease;
+	width: 9rem;
+	font-weight: 800;
+}
+
+.button-github:hover,
+.button-live:hover {
+	cursor: pointer;
+	background-color: var(--clr-red);
+	color: white;
+}
+
+.project2-info-mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+	.project2-image,
+	.project-video {
+		border: 2rem solid var(--clr-green);
+		border-radius: 10px;
+	}
+
+	.projects-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.project {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.project-info-container {
+		align-items: center;
+		margin-bottom: 3rem;
+	}
+
+	.project2-info-desktop {
+		display: none;
+	}
+
+	.project2-info-mobile {
+		display: flex;
+	}
 }
