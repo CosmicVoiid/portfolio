@@ -59,12 +59,15 @@
 
 .projects-container {
 	margin-top: 7rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 90%;
 }
 
 .project {
-	width: 90%;
 	display: flex;
-	margin-left: 10rem;
+	/* margin-left: 10rem; */
 }
 
 .project-video {
@@ -157,13 +160,15 @@
 	}
 
 	.projects-container {
-		display: flex;
-		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+		max-width: 90%;
 	}
 
 	.project {
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		margin: 0;
 	}
 
@@ -178,5 +183,80 @@
 
 	.project2-info-mobile {
 		display: flex;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	.projects-container {
+		margin-top: 2rem;
+		border-bottom-width: 3px;
+	}
+
+	.project-header {
+		font-size: 2rem;
+	}
+
+	.project-description-header {
+		font-size: 1.75rem;
+	}
+
+	.projects-header {
+		font-size: 2rem;
+	}
+
+	.project-info-container > p {
+		font-size: 1rem;
+	}
+
+	.button-github,
+	.button-live {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.project-header {
+		font-size: 1.5rem;
+	}
+
+	.project-description-header {
+		font-size: 1.2rem;
+	}
+
+	.projects-header {
+		font-size: 1.5rem;
+	}
+
+	.project-info-container > p {
+		font-size: 0.8rem;
+	}
+
+	.button-github,
+	.button-live {
+		font-size: 0.8rem;
+	}
+
+	.wave-container2 svg {
+		height: 100px;
+	}
+
+	.projects-container {
+		max-width: 80%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.about-header {
+		font-size: 1.5rem;
+		padding-bottom: 0.3rem;
+		padding-top: 1.5rem;
+	}
+
+	.tech-header {
+		font-size: 1.5rem;
+		padding-bottom: 0.3rem;
+	}
+	.wave-container2 svg {
+		height: 50px;
 	}
 }

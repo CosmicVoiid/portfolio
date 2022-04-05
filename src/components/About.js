@@ -34,7 +34,7 @@ function About() {
 					new tools and techniques for honing my craft. The unique combination
 					of creativity, logic, technology and never running out of new things
 					to discover, drives my excitement and passion for web development.
-					From my background as a carpenter, I've noticed many simularities
+					From my background as a carpenter, I've noticed many similarities
 					between the processes of engineering structures and creating software,
 					so I'm well acquainted to bringing out solutions to complex problems.
 					Other things I love to do is play guitar, stay in shape, and box.
