@@ -1,6 +1,7 @@
 .canvas {
 	background-image: url("../images/space.jpg");
 	position: absolute;
+	max-width: 100%;
 	top: 0;
 	left: 0;
 	background-color: black;

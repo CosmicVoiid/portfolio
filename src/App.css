@@ -22,10 +22,10 @@
 }
 
 body {
-	overflow-x: hidden;
 	width: 100%;
 }
 
 .app {
-	overflow-x: hidden;
+	position: relative;
+	width: 100%;
 }

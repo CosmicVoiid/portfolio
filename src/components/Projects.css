@@ -3,6 +3,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 .wave-container2 {
@@ -246,8 +248,11 @@
 }
 
 @media only screen and (max-width: 500px) {
-	.projects-container {
-		max-width: 70%;
+	.project2-image,
+	.project-video {
+		width: 85%;
+		height: 85%;
+		border-width: 10px;
 	}
 
 	.wave-container2 svg {
