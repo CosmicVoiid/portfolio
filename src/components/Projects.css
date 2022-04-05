@@ -241,21 +241,15 @@
 	}
 
 	.projects-container {
-		max-width: 80%;
+		max-width: 70%;
 	}
 }
 
 @media only screen and (max-width: 500px) {
-	.about-header {
-		font-size: 1.5rem;
-		padding-bottom: 0.3rem;
-		padding-top: 1.5rem;
+	.projects-container {
+		max-width: 70%;
 	}
 
-	.tech-header {
-		font-size: 1.5rem;
-		padding-bottom: 0.3rem;
-	}
 	.wave-container2 svg {
 		height: 50px;
 	}
