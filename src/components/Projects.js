@@ -3,6 +3,7 @@ import "./Projects.css";
 import agoraImg from "../images/agora-screenshot.png";
 import agoraMP4 from "../videos/agora-long3.mp4";
 import watchTowerImg from "../images/watch-tower.png";
+import cyberpunkBattleshipImg from "../images/cyberpunk-battleship.png";
 
 function Projects() {
 	return (
@@ -130,6 +131,43 @@ function Projects() {
 								onClick={(e) => {
 									e.preventDefault();
 									window.open("https://cosmicvoiid.github.io/shopping-cart");
+								}}
+							>
+								Live App
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div className="project project3">
+					<img
+						className="project3-image"
+						src={cyberpunkBattleshipImg}
+						alt="Cyberpunk Battleship"
+					/>
+					<div className="project-info-container">
+						<h2 className="project-header">Cyberpunk Battleship</h2>
+						<h2 className="project-description-header">NextJS Game</h2>
+						<p className="project-description">
+							A cyberpunk themed battleship game created using NextJs.
+						</p>
+						<div className="buttons-container">
+							<button
+								className="button-github"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open(
+										"https://github.com/CosmicVoiid/cyberpunk-battleship"
+									);
+								}}
+							>
+								Learn More
+							</button>
+							<button
+								className="button-live"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open("https://cyberpunk-battleship.vercel.app/");
 								}}
 							>
 								Live App
