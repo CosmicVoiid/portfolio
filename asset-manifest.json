@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2cf5186d.css",
-    "main.js": "/static/js/main.6961f516.js",
+    "main.css": "/static/css/main.834562aa.css",
+    "main.js": "/static/js/main.1d195e42.js",
     "static/media/watch-tower.png": "/static/media/watch-tower.b63b6f538fedbec413bb.png",
-    "static/media/agora-screenshot.png": "/static/media/agora-screenshot.e808468bf45dae7fd2b3.png",
     "static/media/agora-long3.mp4": "/static/media/agora-long3.e2aa346b636592244aff.mp4",
     "static/media/space.jpg": "/static/media/space.eed2dec0494a02046846.jpg",
     "static/media/pug.png": "/static/media/pug.0a2398d6ac55399181bf.png",
@@ -14,16 +13,17 @@
     "static/media/git.png": "/static/media/git.0983b7b8f96629e083f1.png",
     "static/media/mongodb.png": "/static/media/mongodb.41ae1969f341d30268a1.png",
     "static/media/express.png": "/static/media/express.44e99be40ced53a02362.png",
+    "static/media/cyberpunk-battleship.png": "/static/media/cyberpunk-battleship.8ee9aa29db5915f19241.png",
     "static/media/ts.png": "/static/media/ts.8fe41361dff57e3f6c2e.png",
     "static/media/mui.png": "/static/media/mui.5b2d8a0a309d9f7d47c1.png",
     "static/media/firebase.png": "/static/media/firebase.9cb44a5c305f7c52c6f7.png",
     "static/media/react.png": "/static/media/react.cb15bfce2a9004ce61c5.png",
     "index.html": "/index.html",
-    "main.2cf5186d.css.map": "/static/css/main.2cf5186d.css.map",
-    "main.6961f516.js.map": "/static/js/main.6961f516.js.map"
+    "main.834562aa.css.map": "/static/css/main.834562aa.css.map",
+    "main.1d195e42.js.map": "/static/js/main.1d195e42.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cf5186d.css",
-    "static/js/main.6961f516.js"
+    "static/css/main.834562aa.css",
+    "static/js/main.1d195e42.js"
   ]
 }
