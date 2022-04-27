@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import "./About.css";
 import htmlImg from "../images/html.png";
 import cssImg from "../images/css.png";
@@ -7,6 +6,7 @@ import jsImg from "../images/js.png";
 import tsImg from "../images/ts.png";
 import reactImg from "../images/react.png";
 import muiImg from "../images/mui.png";
+import nextImg from "../images/nextjs.png";
 import nodejsImg from "../images/nodejs.png";
 import expressImg from "../images/express.png";
 import jestImg from "../images/jest.png";
@@ -76,6 +76,10 @@ function About() {
 						<div className="icon-container">
 							<img alt="MUI icon" src={muiImg} />
 							<p className="icon-caption">MUI</p>
+						</div>
+						<div className="icon-container">
+							<img alt="Next.js icon" src={nextImg} />
+							<p className="icon-caption">NextJS</p>
 						</div>
 					</div>
 				</div>

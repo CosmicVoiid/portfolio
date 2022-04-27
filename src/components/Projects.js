@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import agoraImg from "../images/agora-screenshot.png";
 import agoraMP4 from "../videos/agora-long3.mp4";
 import watchTowerImg from "../images/watch-tower.png";
 import cyberpunkBattleshipImg from "../images/cyberpunk-battleship.png";
@@ -147,9 +146,10 @@ function Projects() {
 					/>
 					<div className="project-info-container">
 						<h2 className="project-header">Cyberpunk Battleship</h2>
-						<h2 className="project-description-header">NextJS Game</h2>
+						<h2 className="project-description-header">Next.js Game</h2>
 						<p className="project-description">
-							A cyberpunk themed battleship game created using NextJs.
+							A cyberpunk themed battleship game created using Next.js where
+							users can play against an AI.
 						</p>
 						<div className="buttons-container">
 							<button
