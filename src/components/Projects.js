@@ -3,6 +3,7 @@ import "./Projects.css";
 import agoraMP4 from "../videos/agora-long3.mp4";
 import watchTowerImg from "../images/watch-tower.png";
 import cyberpunkBattleshipImg from "../images/cyberpunk-battleship.png";
+import pokecardImg from "../images/pokemon-screenshot.png";
 
 function Projects() {
 	return (
@@ -168,6 +169,72 @@ function Projects() {
 								onClick={(e) => {
 									e.preventDefault();
 									window.open("https://cyberpunk-battleship.vercel.app/");
+								}}
+							>
+								Live App
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div className="project project4">
+					<div className="project-info-container project4-info-container project4-info-desktop">
+						<h2 className="project-header">Pokecards</h2>
+						<h2 className="project-description-header">Next.js Pokemon App</h2>
+						<p className="project-description">
+							A Next.js app that utilizes the PokeAPI to allow users to look up
+							Pokemon cards displaying its stats.
+						</p>
+						<div className="buttons-container">
+							<button
+								className="button-github"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open("https://github.com/CosmicVoiid/pokecards");
+								}}
+							>
+								Learn More
+							</button>
+							<button
+								className="button-live"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open("https://pokecards-psi.vercel.app/");
+								}}
+							>
+								Live App
+							</button>
+						</div>
+					</div>
+
+					<img
+						className="project4-image"
+						src={pokecardImg}
+						alt="Pokecard Website"
+					/>
+
+					<div className="project-info-container project4-info-container project4-info-mobile">
+						<h2 className="project-header">Pokecards</h2>
+						<h2 className="project-description-header">Next.js Pokemon App</h2>
+						<p className="project-description">
+							A Next.js app that utilizes the PokeAPI to allow users to look up
+							Pokemon cards displaying its stats.
+						</p>
+						<div className="buttons-container">
+							<button
+								className="button-github"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open("https://github.com/CosmicVoiid/pokecards");
+								}}
+							>
+								Learn More
+							</button>
+							<button
+								className="button-live"
+								onClick={(e) => {
+									e.preventDefault();
+									window.open("https://pokecards-psi.vercel.app/");
 								}}
 							>
 								Live App
