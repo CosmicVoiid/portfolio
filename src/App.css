@@ -11,6 +11,7 @@
 	padding: 0;
 	scrollbar-color: grey var(--clr-dark);
 	font-family: Montserrat, "sans-seriff";
+	box-sizing: border-box;
 }
 
 *::-webkit-scrollbar-track {

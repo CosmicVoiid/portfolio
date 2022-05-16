@@ -69,6 +69,7 @@
 
 .project {
 	display: flex;
+	flex-shrink: 1;
 	/* margin-left: 10rem; */
 }
 

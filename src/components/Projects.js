@@ -27,19 +27,21 @@ function Projects() {
 			</h1>
 			<div className="projects-container">
 				<div className="project">
-					<video
-						autoPlay={true}
-						muted={true}
-						loop={true}
-						className="project-video"
-						src={agoraMP4}
-						type="video/mp4"
-						onMouseOut={(e) => {
-							e.target.currentTime = 0;
-							e.target.pause();
-						}}
-						onMouseOver={(e) => e.target.play()}
-					/>
+					<div className="project-video-container">
+						<video
+							autoPlay={true}
+							muted={true}
+							loop={true}
+							className="project-video"
+							src={agoraMP4}
+							type="video/mp4"
+							onMouseOut={(e) => {
+								e.target.currentTime = 0;
+								e.target.pause();
+							}}
+							onMouseOver={(e) => e.target.play()}
+						/>
+					</div>
 					<div className="project-info-container">
 						<h2 className="project-header">Agora</h2>
 						<h2 className="project-description-header">Social Media App</h2>
@@ -103,11 +105,13 @@ function Projects() {
 						</div>
 					</div>
 
-					<img
-						className="project2-image"
-						src={watchTowerImg}
-						alt="Watch Tower website"
-					/>
+					<div className="project2-image-container">
+						<img
+							className="project2-image"
+							src={watchTowerImg}
+							alt="Watch Tower website"
+						/>
+					</div>
 
 					<div className="project-info-container project2-info-container project2-info-mobile">
 						<h2 className="project-header">The Watch Tower</h2>
@@ -140,11 +144,13 @@ function Projects() {
 				</div>
 
 				<div className="project project3">
-					<img
-						className="project3-image"
-						src={cyberpunkBattleshipImg}
-						alt="Cyberpunk Battleship"
-					/>
+					<div className="project3-image-container">
+						<img
+							className="project3-image"
+							src={cyberpunkBattleshipImg}
+							alt="Cyberpunk Battleship"
+						/>
+					</div>
 					<div className="project-info-container">
 						<h2 className="project-header">Cyberpunk Battleship</h2>
 						<h2 className="project-description-header">Next.js Game</h2>
@@ -207,11 +213,13 @@ function Projects() {
 						</div>
 					</div>
 
-					<img
-						className="project4-image"
-						src={pokecardImg}
-						alt="Pokecard Website"
-					/>
+					<div className="project4-image-container">
+						<img
+							className="project4-image"
+							src={pokecardImg}
+							alt="Pokecard Website"
+						/>
+					</div>
 
 					<div className="project-info-container project4-info-container project4-info-mobile">
 						<h2 className="project-header">Pokecards</h2>
