@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7de135b3.css",
-    "main.js": "/static/js/main.eb448d86.js",
+    "main.css": "/static/css/main.7e377616.css",
+    "main.js": "/static/js/main.a5e8aeba.js",
     "static/media/watch-tower.png": "/static/media/watch-tower.b63b6f538fedbec413bb.png",
     "static/media/agora-long3.mp4": "/static/media/agora-long3.e2aa346b636592244aff.mp4",
     "static/media/space.jpg": "/static/media/space.eed2dec0494a02046846.jpg",
@@ -20,11 +20,11 @@
     "static/media/firebase.png": "/static/media/firebase.9cb44a5c305f7c52c6f7.png",
     "static/media/react.png": "/static/media/react.cb15bfce2a9004ce61c5.png",
     "index.html": "/index.html",
-    "main.7de135b3.css.map": "/static/css/main.7de135b3.css.map",
-    "main.eb448d86.js.map": "/static/js/main.eb448d86.js.map"
+    "main.7e377616.css.map": "/static/css/main.7e377616.css.map",
+    "main.a5e8aeba.js.map": "/static/js/main.a5e8aeba.js.map"
   },
   "entrypoints": [
-    "static/css/main.7de135b3.css",
-    "static/js/main.eb448d86.js"
+    "static/css/main.7e377616.css",
+    "static/js/main.a5e8aeba.js"
   ]
 }
